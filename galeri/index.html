@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Galeri - Chairil Ali</title>
+
+    <!-- link google fonts dan bootstrap CDN -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous" />
+
+    <style>
+      body {
+        background-image: url(img/pattern.png);
+        font-family: "Poppins", sans-serif;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <!-- banner -->
+      <div class="row">
+        <div class="col-12">
+          <img src="img/Banner.jpg" alt="Banner" class="img-fluid rounded" style="height: 300px" width="100%" />
+        </div>
+      </div>
+
+      <!-- nav -->
+      <div class="container bg-light">
+        <div class="row">
+          <nav class="navbar navbar-expand-lg bg-info">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">Chairil Ali</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 mx-auto">
+                  <li class="nav-tabs me-4">
+                    <a class="nav-link" aria-current="page" href="../index.html" target="_blank">Home</a>
+                  </li>
+                  <li class="nav-tabs me-4">
+                    <a class="nav-link" href="../profile/index.html" target="_blank">Profile</a>
+                  </li>
+                  <li class="nav-tabs me-4">
+                    <a class="nav-link" href="#">Galeri</a>
+                  </li>
+                  <li class="nav-tabs">
+                    <a class="nav-link" href="../kontak/index.html" target="_blank">Kontak</a>
+                  </li>
+                </ul>
+                <!-- search - blm aktif -->
+                <form class="d-flex" role="search">
+                  <input class="form-control me-2" type="search" placeholder="..." aria-label="Search" />
+                  <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </div>
+
+      <!-- corousel -->
+      <div class="container bg-light">
+        <div class="row">
+          <div class="col-8 mx-auto my-5">
+            <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
+              <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              </div>
+              <div class="carousel-inner rounded" style="height: 600px">
+                <div class="carousel-item active">
+                  <img src="http://unsplash.it/500/600?image=1" class="d-block w-100" alt="1" />
+                </div>
+                <div class="carousel-item">
+                  <img src="http://unsplash.it/500/600?image=2" class="d-block w-100" alt="2" />
+                </div>
+                <div class="carousel-item">
+                  <img src="http://unsplash.it/500/600?image=3" class="d-block w-100" alt="3" />
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- video -->
+          <div class="row mb-5">
+            <div class="col-6 mx-auto">
+              <div class="card shadow">
+                <video id="video" controls="controls" preload="none" width="100%" poster="https://assets.codepen.io/32795/poster.png">
+                  <source id="mp4" src="http://media.w3.org/2010/05/sintel/trailer.mp4" type="video/mp4" />
+                </video>
+                <div class="card-body text-center">Trailler Film - By Chairil Ali</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- audio -->
+          <div class="row mb-5">
+            <div class="col-12 text-center">
+              <audio controls preload="metadata" class="shadow">
+                <source src="https://www.w3schools.com/html/horse.ogg" style="width: 100%" type="audio/mp3" />
+              </audio>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- javascript bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+  </body>
+</html>

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>kontak - Chairil Ali</title>
+
+    <!-- link google fonts dan bootstrap CDN -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous" />
+
+    <style>
+      body {
+        background-image: url(img/pattern.png);
+        font-family: "Poppins", sans-serif;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <!-- banner -->
+      <div class="row">
+        <div class="col-12">
+          <img src="img/Banner.jpg" alt="Banner" class="img-fluid rounded" style="height: 300px" width="100%" />
+        </div>
+      </div>
+
+      <!-- nav -->
+      <div class="container bg-light">
+        <div class="row">
+          <nav class="navbar navbar-expand-lg bg-info">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">Chairil Ali</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 mx-auto">
+                  <li class="nav-tabs me-4">
+                    <a class="nav-link" aria-current="page" href="../index.html" target="_blank">Home</a>
+                  </li>
+                  <li class="nav-tabs me-4">
+                    <a class="nav-link" href="../profile/index.html" target="_blank">Profile</a>
+                  </li>
+                  <li class="nav-tabs me-4">
+                    <a class="nav-link" href="../galeri/index.html" target="_blank">Galeri</a>
+                  </li>
+                  <li class="nav-tabs">
+                    <a class="nav-link" href="#">Kontak</a>
+                  </li>
+                </ul>
+                <!-- search - blm aktif -->
+                <form class="d-flex" role="search">
+                  <input class="form-control me-2" type="search" placeholder="..." aria-label="Search" />
+                  <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </div>
+
+      <!-- title -->
+      <div class="container bg-secondary" style="height: 100vh; width: 100%">
+        <div class="row">
+          <div class="col-12 my-5">
+            <marquee behavior="scroll" width="100%" direction="left" height="70px" scrollamount="15">
+              <h1>Stay Connect With Me!</h1>
+            </marquee>
+          </div>
+        </div>
+
+        <!-- contact modal -->
+        <div class="row">
+          <div class="col-12 text-center">
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#formMahasiswa" style="width: 200px; height: 50px">Contact Me!</button>
+          </div>
+        </div>
+
+        <!-- form submit-->
+        <div class="modal fade" id="formMahasiswa" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Hi there...</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+
+              <div class="modal-body">
+                <form action="https://formsubmit.co/mrnightmare13081999@gmail.com" name="contact" method="post">
+                  <input type="hidden" name="_subject" value="Pesan Baru Dari Tugas Web!!!" />
+                  <input type="hidden" name="_captcha" value="false" />
+
+                  <div class="mb-2">
+                    <label class="form-label" for="Nama">Nama</label>
+                    <input type="text" class="form-control" name="Nama" placeholder="Nama kamu" id="Nama" required />
+                  </div>
+                  <div class="mb-2">
+                    <label class="form-label" for="Email">Email</label>
+                    <input type="email" class="form-control" name="Email" placeholder="Email kamu" id="Email" required />
+                  </div>
+                  <div class="mb-2">
+                    <label class="form-label" for="No">No. Telp</label>
+                    <input type="number" class="form-control" name="No. Telp" placeholder="No. Telp kamu" id="No" required />
+                  </div>
+                  <div class="mb-2">
+                    <label class="form-label" for="Status">Status</label>
+                    <input type="text" class="form-control" name="Status" placeholder="Status kamu" id="Status" required />
+                  </div>
+                  <div class="mb-2">
+                    <label class="form-label" for="Alamat">Alamat</label>
+                    <input type="text" class="form-control" name="Alamat" placeholder="Alamat kamu" id="Alamat" required />
+                  </div>
+                  <div class="mb-4">
+                    <label class="form-label" for="Pesan">Pesan</label>
+                    <textarea class="form-control" name="Pesan" placeholder="Assalamualaikum..." id="Pesan" required></textarea>
+                  </div>
+                  <div class="mb-2 text-right">
+                    <button type="submit" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="submit" class="btn btn-primary">Send</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- javascript bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+  </body>
+</html>
